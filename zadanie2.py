@@ -1,4 +1,4 @@
-def fibonacci(n):
+def fibonacci(n: int) -> int:
     if n < 3:
         return 1
     else:
