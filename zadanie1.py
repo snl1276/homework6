@@ -1,4 +1,4 @@
-def concat(*args: str, Reversed=False) -> str:
+def concat(*args: str, **Reversed) -> str:
     stroka = ''
     if not Reversed:
         for iter in args:
