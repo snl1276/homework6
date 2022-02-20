@@ -3,10 +3,12 @@ def inspect(function_to_decorate):
         print('Args:', args)
         print('Kwargs:',  Reversed)
         
-        function_to_decorate(*args, Reversed=False)
+        function_to_decorate(*args, **Reversed)
     return accepting_arguments
+
+
 @inspect
-def concat(*args: str, Reversed=False) -> str:
+def concat(*args: str, **Reversed) -> str:
     stroka = ''
     if not Reversed:
         for iter in args:
