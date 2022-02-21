@@ -2,7 +2,7 @@ def inspect(function_to_decorate):
     def accepting_arguments(*args, **Reversed):
         print('Args:', args)
         print('Kwargs:',  Reversed)
-        
+        print('Retvalue: ', )
         function_to_decorate(*args, **Reversed)
     return accepting_arguments
 
