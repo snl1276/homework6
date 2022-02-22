@@ -2,8 +2,7 @@ def inspect(function_to_decorate):
     def accepting_arguments(*args, **Reversed):
         print('Args:', args)
         print('Kwargs:',  Reversed)
-        print('Retvalue: ', )
-        function_to_decorate(*args, **Reversed)
+        print(function_to_decorate(*args, **Reversed))
     return accepting_arguments
 
 
@@ -16,7 +15,8 @@ def concat(*args: str, **Reversed) -> str:
     else:
         for iter in reversed(args):
             stroka += iter
-    return print(stroka)
+    print('Retvalue: ', stroka)
+    return stroka
 
 
 concat('Hello', ' ', 'world', Reversed=True)
